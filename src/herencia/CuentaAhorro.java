@@ -5,18 +5,10 @@
  */
 package herencia;
 
-
-public class Herencia {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        
-        cuenta c1 = new cuenta();
-       
-    
-        
-    }
+/**
+ *
+ * @author orlando
+ */
+public class CuentaAhorro {
     
 }
