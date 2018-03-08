@@ -10,7 +10,7 @@ package herencia;
  *
  * @author orlando
  */
-public class cuenta {
+public abstract class cuenta {
     
     protected int numerocuenta;
     protected double saldo;
@@ -49,6 +49,8 @@ public class cuenta {
     public void setCliente1(cliente cliente1) {
         this.cliente1 = cliente1;
     }
+    public abstract void retirar(double retiro);
     
+    public abstract void actualizarsaldo();
     
 }

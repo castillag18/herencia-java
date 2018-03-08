@@ -9,6 +9,27 @@ package herencia;
  *
  * @author orlando
  */
-public class CuentaAhorro {
+public class CuentaAhorro extends cuenta{
+
+    public CuentaAhorro(int numererocuenta, double saldo, cliente cliente1) {
+        super(numererocuenta, saldo, cliente1);
+    }
+
+    public CuentaAhorro() {
+    }
+
+    @Override
+    public void retirar(double retiro) {
+        
+    }
+
+    @Override
+    public void actualizarsaldo() {
+        
+    }
+    
+    
+    
+    
     
 }

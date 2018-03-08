@@ -9,6 +9,25 @@ package herencia;
  *
  * @author orlando
  */
-public class CuentaCorriente {
+public class CuentaCorriente extends cuenta{
+
+    public CuentaCorriente(int numererocuenta, double saldo, cliente cliente1) {
+        super(numererocuenta, saldo, cliente1);
+    }
+
+    public CuentaCorriente() {
+    }
+
+    @Override
+    public void retirar(double retiro) {
+        
+    }
+
+    @Override
+    public void actualizarsaldo() {
+        
+    }
+    
+    
     
 }
