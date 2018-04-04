@@ -4,8 +4,9 @@
  * and open the template in the editor.
  */
 package herencia;
-
-
+import herencia.CuentaAhorro;
+import herencia.CuentaCorriente;
+import javax.swing.JOptionPane;
 public class Herencia {
 
     /**
@@ -13,9 +14,18 @@ public class Herencia {
      */
     public static void main(String[] args) {
         
+        cliente c1 = new cliente() ;
+        cuenta c3= new CuentaCorriente();
+        cuenta c2 = new CuentaAhorro();
+        c2.retirar(0);
+        c3.retirar(0);
         
-       
-    
+        
+        String nombre;
+        String apellido;
+        String cedula;
+        
+        
         
     }
     

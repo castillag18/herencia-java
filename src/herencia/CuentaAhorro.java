@@ -5,11 +5,13 @@
  */
 package herencia;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author orlando
  */
-public class CuentaAhorro extends cuenta{
+public class CuentaAhorro extends cuenta {
 
     public CuentaAhorro(int numererocuenta, double saldo, cliente cliente1) {
         super(numererocuenta, saldo, cliente1);
@@ -20,16 +22,21 @@ public class CuentaAhorro extends cuenta{
 
     @Override
     public void retirar(double retiro) {
-        
+        /*  System.out.println("hola");*/
+       double saldo = Integer.parseInt(JOptionPane.showInputDialog("digite su saldo actual"));
+        if (saldo <= 0) {
+            JOptionPane.showMessageDialog(null, "no hay saldo");
+        } else
+            if(saldo > 0){
+            saldo = saldo - retiro;
+        }
+            
     }
 
     @Override
     public void actualizarsaldo() {
-        
+         saldo =+ saldo;
+     System.out.println("el saldo actual es  : " + saldo);
     }
-    
-    
-    
-    
-    
+
 }
