@@ -29,6 +29,7 @@ public class CuentaAhorro extends cuenta {
         } else
             if(saldo > 0){
             saldo = saldo - retiro;
+            JOptionPane.showMessageDialog(null, "saldo" + saldo);
         }
             
     }
